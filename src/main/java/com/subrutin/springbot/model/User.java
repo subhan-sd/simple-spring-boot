@@ -18,19 +18,19 @@ public class User {
         this.name = name;
     }
 
-    public int getAmount() {
+    public long getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(long amount) {
         this.amount = amount;
     }
 
     private int id;
     private String name;
-    private int amount;
+    private long amount;
 
-    public User(int id, String name, int amount) {
+    public User(int id, String name, long amount) {
         this.id = id;
         this.name = name;
         this.amount = amount;
