@@ -11,7 +11,6 @@ public class UserServices {
 
     @Autowired
     private User dataUser;
-
     private static HashMap<Long , User> listUser = new HashMap<>();
     static {
         User user1 = new User(1,"ACE",100);
