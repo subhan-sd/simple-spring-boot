@@ -32,20 +32,18 @@ public class UserServices {
         return listUser.get(id);
     }
 
-    public static User UserMinuseAmount(int id, long amount, UserReq userReq) {
-
+    public static User UserMinuseAmount(int id, long amount,UserReq userReq) {
 
         userReq.setId(id);
         userReq.setAmountReq(amount);
-        User inputUser = new User(id, listUser.get(id).getName(), listUser.get(id).getAmount() - userReq.getAmountReq());
+
+        User inputUser = new User(id, listUser.get(id).getName(),(listUser.get(id).getAmount() + amount));
         listUser.put(id, inputUser);
         return listUser.get(id);
 
     }
 
-    public void sout() {
-        System.out.println(listUser.get(1));
-    }
+
 
 
 }

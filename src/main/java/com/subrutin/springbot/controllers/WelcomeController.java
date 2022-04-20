@@ -21,7 +21,7 @@ public class WelcomeController {
         return UserServices.getUser(id);
     }
 
-    @PostMapping("/getUserByName")
+    @PostMapping(value = "/getUserByName")
     public User getMinuseAmount(@RequestBody UserReq userReq) {
         return UserServices.UserMinuseAmount(userReq.getId(), userReq.getAmountReq(), userReq);
     }
