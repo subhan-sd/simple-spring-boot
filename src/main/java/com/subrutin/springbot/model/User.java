@@ -1,5 +1,8 @@
 package com.subrutin.springbot.model;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
+
 public class User {
 
     public int getId() {
@@ -26,7 +29,10 @@ public class User {
         this.amount = amount;
     }
 
+//    @Valid
+//    @NotEmpty(message = "ID CAN'T BE NULL")
     private int id;
+
     private String name;
     private long amount;
 
